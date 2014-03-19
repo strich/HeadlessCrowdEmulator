@@ -1,0 +1,288 @@
+/*CSS RESET*/
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+	font-family: "Open Sans",sans-serif;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+header {
+	width: 100%;
+	height: 60px;
+	background-color: rgba(255,255, 255, 0.3);
+}
+body {
+    background-color: #2d648a;
+}
+.headerlogo {
+    padding: 10px 10px 10px 10px;
+    color: white;
+    text-shadow: -1px 1px darkgray;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 600px;
+    width: 100%;
+    /*background-image: url(../static/bg.jpg);*/
+    z-index: -1;
+}
+nav {
+	width: 200px;
+	height: 100%;
+	position: absolute;
+	background-color: darkgrey;
+	left: 0;
+}
+nav li {
+	line-height: 2em;
+	padding: 10px 0 10px 5px;
+	color: white;
+}
+.wrap {
+	width: 1040px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#trans_bg {
+    background-color: #f1f1f1;
+}
+.console {
+    width: 660px;
+    height: 600px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #2980b9;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.screen {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: 378px;
+    width: 620px;
+    background-color: darkgray;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    top: 0px;
+}
+.twitch_chat {
+	position: relative;
+	display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    width: 355px;
+    height: 580px;
+    background-color: #95a5a6;
+}
+.control_pan {
+    width: 370px;
+    height: 150px;
+    margin: 0 10px 10px 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    vertical-align: top;
+    display: inline-block;
+}
+.control_switch {
+    width: 215px;
+    height: 150px;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    vertical-align: top;
+    display: inline-block;
+}
+.dpad_base {
+    
+}
+.dpad_up {
+    top: 440px;
+    left: 60px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    box-shadow: -2px 0 2px rgba(0, 0, 0, 0.3);
+}
+.dpad_right {
+    top: 480px;
+    left: 100px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color:  rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.dpad_down {
+    top: 520px;
+    left: 60px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.dpad_left {
+    top: 480px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+#start {
+    top: 560px;
+    left: 210px;
+    width: 60px;
+    height: 15px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 3px 3px 3px 3px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    text-shadow: -1px 1px darkgray;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+#select {
+    top: 560px;
+    left: 140px;
+    width: 60px;
+    height: 15px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.8em;
+    border-radius: 2px;
+    padding: 3px 3px 3px 3px;
+    color: white;
+    cursor: pointer;
+    text-shadow: -1px 1px darkgray;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+#button_a {
+    top: 500px;
+    left: 300px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+#button_a_text {
+    position: relative;
+    top: 11px;
+}
+#button_a:hover {
+    box-shadow: none;
+}
+#button_b {
+    top: 460px;
+    left: 340px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+#button_b_text {
+    position: relative;
+    top: 11px;
+}
+#anarchy {
+    top: 560px;
+    left: 540px;
+    width: 90px;
+    height: 15px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 3px 3px 3px 3px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    text-shadow: -1px 1px darkgray;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+#democracy {
+    top: 560px;
+    left: 430px;
+    width: 90px;
+    height: 15px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 3px 3px 3px 3px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    text-shadow: -1px 1px darkgray;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.gamebox_wrap {
+    width: 735px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gamebox {
+    width: 150px;
+    height: 130px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+    background-color: #2980b9;
+}
+.gamebox_img {
+    width: 150px;
+    height: 100px;
+    background-color: darkgray;
+    text-align: center;
+    color: white;
+}

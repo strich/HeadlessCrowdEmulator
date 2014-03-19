@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Crowd Gaming</title>
+<link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/script.js"></script>
+</head>
+
+    <body>
+        <div id="background"></div>
+        <header>
+            <div class="wrap">
+                <div class="headerlogo">
+                    <h1 class="left">Crowd Gaming</h1>
+                    <h1 class="right">Login with TWITCH</h1>
+                </div>
+            </div>
+        </header>
+ 
+
+        <div class="wrap" id="trans_bg">
+            <div class="console">
+                <div class="screen">
+                    <object type="application/x-shockwave-flash" height="378" width="620" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=REPLACEME" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=REPLACEME&auto_play=true" /></object>
+                </div>
+                <div class="control_pan">
+                    <div class="dpad_up"></div>
+                    <div class="dpad_right"></div>
+                    <div class="dpad_down"></div>
+                    <div class="dpad_left"></div>
+                    <div id="select">SEL</div>
+                    <div id="start">START</div>
+                    <div id="button_a">
+                        <div id="button_a_text">A</div>
+                    </div>
+                    <div id="button_b">
+                        <div id="button_b_text">B</div>
+                    </div>
+                </div>
+                <div class="control_switch">
+                    <div id="anarchy">ANARCHY</div>
+                    <div id="democracy">DEMOCRACY</div>
+                </div>
+            </div>
+            <div class="twitch_chat">
+                <iframe frameborder="0" scrolling="no" id="chat_embed" src="http://twitch.tv/chat/embed?channel=REPLACEME&popout_chat=true" height="580" width="355"></iframe>
+            </div>
+            
+            <h1>Welcome to Crowd Gaming</h1>
+            <p>Copy copy copy</p>
+            <h2>Other games in the crowd gaming library:</h2>
+            
+            <div class="gamebox_wrap">
+                <div class="gamebox">
+                    <div class="gamebox_img">
+                        <img src="../static/pokemon_gold.jpg" />
+                        <h1>PLAY NOW</h1>
+                    </div>
+                </div>
+                <div class="gamebox">
+                    <div class="gamebox_img">
+                        <img src="../static/pokemon_silver.jpg" />
+                        <h1>PLAY NOW</h1>
+                    </div>
+                </div>
+                <div class="gamebox">
+                    <div class="gamebox_img">
+                        <img src="../static/ff_tactics.jpg" />
+                        <h1>PLAY NOW</h1>
+                    </div>
+                </div>
+                <div class="gamebox">
+                    <div class="gamebox_img">
+                        <img src="../static/ff_tactics_adv.jpg" />
+                        <h1>PLAY NOW</h1>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+    </body>
+</html>
